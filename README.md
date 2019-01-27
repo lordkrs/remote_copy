@@ -1,7 +1,16 @@
 # remote_copy
 Copy files from local-local,remote-local and remote-remote with recursive flag (for source file protocol )
 
+Packages required: libcurl4-gnutls-dev
 
+Compilation and Creating Binary:
+g++ -o remotecp -lcurl remote_copy.cpp
+
+You can copy this remotecp to /bin so that it can be used with adding its directory to $PATH variable
+sudo cp remotecp /bin/remotecp
+chmod 777 /bin/remotecp
+
+Instructions::
 
 Usage: remotecp [-r][-json][-src_usrpwd][-dst_usrpwd] -src src_file -dst dst_file;
     
