@@ -30,11 +30,12 @@ void show_usage();
 class Dict{
     
     char key[30][MAX_LENTH], value[30][MAX_LENTH];
-    int dict_lent = -1;
+    int dict_lent;
 
     public:
 
         Dict(){
+			dict_lent = -1;
             return;
         }
 
